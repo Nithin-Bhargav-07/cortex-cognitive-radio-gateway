@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zinc-950: #09090b;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-zinc-600: #52525b;
+  --color-zinc-500: #71717a;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-100: #f4f4f5;
+  --color-purple-accent: #7f77dd;
+  --color-green-safe: #22c55e;
+  --color-yellow-caution: #eab308;
+  --color-red-critical: #ef4444;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-zinc-950);
+    color: var(--color-zinc-100);
+    font-family: Inter, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* App is full screen dashboard */
+  }
+
+  /* Fixed width container for live numbers to prevent layout jitter */
+  .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar for terminal/logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-zinc-800);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-zinc-600);
+}

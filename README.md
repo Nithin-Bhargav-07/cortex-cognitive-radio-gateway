@@ -54,6 +54,8 @@ radio communications — buffering non-critical messages during
 high-load moments and releasing concise AI-summarized versions
 only when the driver has cognitive bandwidth to receive them.
 
+```text
+
 Engineer speaks → CORTEX intercepts → IBM Granite classifies urgency
 ↓
 CL score > 70?  ──YES──→  Buffer message (predictive or reactive hold)
@@ -61,6 +63,8 @@ CL score > 70?  ──YES──→  Buffer message (predictive or reactive hold)
 Deliver immediately        CL drops below 70
 ↓
 Release 3-word Granite summary
+
+```
 + Kokoro TTS audio to driver
 + Guardian safety validation
 + Audit log entry
@@ -111,11 +115,13 @@ Standard RAG systems destroy the table structure in FIA PDFs.
 Docling's Vision-Language architecture preserves the exact
 hierarchical tables mapping corners to G-force classifications.
 
+```text
 FIA Event Notes PDF → IBM Docling → DocTags (structured)
 ↓
 Corner load map: Turn 8 = 4.5G HIGH, Tunnel = 0G OPEN
 ↓
 Predictive buffer armed 3 seconds before each high-load zone
+```
 
 ### IBM Granite Guardian — Safety Validation
 

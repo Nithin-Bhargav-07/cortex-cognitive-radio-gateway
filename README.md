@@ -253,7 +253,7 @@ npm run dev
 
 ---
 
-## Why CORTEX, not NeuroTrack
+## Why CORTEX?
 
 Other systems ask: *what is the driver's psychological state?*
 

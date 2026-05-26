@@ -1,9 +1,9 @@
 <div align="center">
 
-#  PitMind
+#  CORTEX
 ### The Cognitive Radio Gateway for Formula 1
 
-*The pit wall sees the machine clearly. PitMind protects the mind operating it.*
+*The pit wall sees the machine clearly. CORTEX protects the mind operating it.*
 
 [![IBM Granite](https://img.shields.io/badge/IBM-Granite_4-052FAD?logo=ibm)](https://www.ibm.com/granite)
 [![IBM Docling](https://img.shields.io/badge/IBM-Docling-052FAD?logo=ibm)](https://www.docling.ai)
@@ -18,7 +18,7 @@
 
 ---
 
-> **PitMind is not a telemetry dashboard. It is not a strategy copilot.**
+> **CORTEX is not a telemetry dashboard. It is not a strategy copilot.**
 > It is a real-time cognitive radio gateway for Formula 1 —
 > an AI system that decides when, how, and whether a message
 > reaches the driver's conscious mind.
@@ -48,13 +48,13 @@ No current motorsport AI system addresses this.
 
 ## The Solution
 
-PitMind monitors live telemetry to calculate driver cognitive load
+CORTEX monitors live telemetry to calculate driver cognitive load
 every 100ms, then acts as an intelligent gateway for all pit wall
 radio communications — buffering non-critical messages during
 high-load moments and releasing concise AI-summarized versions
 only when the driver has cognitive bandwidth to receive them.
 
-Engineer speaks → PitMind intercepts → IBM Granite classifies urgency
+Engineer speaks → CORTEX intercepts → IBM Granite classifies urgency
 ↓
 CL score > 70?  ──YES──→  Buffer message (predictive or reactive hold)
 ↓ NO                         ↓
@@ -69,15 +69,15 @@ Release 3-word Granite summary
 
 Most systems react when the driver is already overloaded.
 
-**PitMind acts 3 seconds before they get there.**
+**CORTEX acts 3 seconds before they get there.**
 
 IBM Docling parses official FIA Event Notes PDFs and extracts
 corner G-force profiles for the circuit. When telemetry shows
 the car approaching Turn 8 (4.5G, Monaco) — before the braking
-even begins — PitMind triggers a predictive hold. The engineer's
+even begins — CORTEX triggers a predictive hold. The engineer's
 message is intercepted before the cognitive spike, not during it.
 
-| Without PitMind | With PitMind |
+| Without CORTEX | With CORTEX |
 |----------------|--------------|
 | Engineer speaks mid-corner | Message intercepted 3s before corner |
 | Driver experiences fP3 suppression | Driver in low-load zone when message arrives |
@@ -161,7 +161,7 @@ Monaco Synthetic Telemetry (10Hz)
             v
 +----------------------------------+
 |       React Dashboard            |
-|  View 1: PitMind Command         |
+|  View 1: CORTEX Command         |
 |  View 2: Lap Intelligence        |
 |  View 3: Car Systems             |
 +----------------------------------+
@@ -171,7 +171,7 @@ Monaco Synthetic Telemetry (10Hz)
 
 ## Dashboard
 
-### View 1 — PitMind Command
+### View 1 — CORTEX Command
 The flagship view for the Race Engineer.
 
 - **Cognitive Load Hero** — live 0-100 score, color-reactive, with 6-second history heatmap
@@ -224,7 +224,7 @@ If the audit write fails, the event is not emitted.
 
 ### Backend (Google Colab)
 
-1. Open `PitMind_Backend.ipynb` in Google Colab
+1. Open `CORTEX_Backend.ipynb` in Google Colab
 2. Run Cell 1 — installs all dependencies
 3. Run Cell 2 — writes all backend files to disk
 4. Run Cell 3 — add your credentials and start the server:
@@ -239,8 +239,8 @@ ngrok.set_auth_token("your_ngrok_token")
 ### Frontend
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pitmind
-cd pitmind/frontend
+git clone https://github.com/YOUR_USERNAME/cortex
+cd cortex/frontend
 npm install
 
 # Create .env:
@@ -253,15 +253,15 @@ npm run dev
 
 ---
 
-## Why PitMind, not NeuroPit
+## Why CORTEX, not NeuroTrack
 
 Other systems ask: *what is the driver's psychological state?*
 
-PitMind asks: *given that state, should this message reach them right now?*
+CORTEX asks: *given that state, should this message reach them right now?*
 
 Measuring cognitive load is the input. Acting on it — intercepting,
 summarizing, timing, and delivering communications — is the output.
-PitMind is an intervention system, not an observation system.
+CORTEX is an intervention system, not an observation system.
 That distinction is where races are won.
 
 ---
@@ -295,8 +295,8 @@ Built on [FastAPI](https://fastapi.tiangolo.com),
 
 <div align="center">
 
-**PitMind · IBM SkillsBuild AI Builders Challenge 2026**
+**CORTEX · IBM SkillsBuild AI Builders Challenge 2026**
 
-*The pit wall sees the machine. PitMind protects the mind.*
+*The pit wall sees the machine. CORTEX protects the mind.*
 
 </div>

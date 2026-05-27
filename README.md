@@ -259,6 +259,21 @@ npm run dev
 
 ---
 
+## A Note on Data
+
+CORTEX uses a synthetic Monaco-style telemetry replay 
+rather than the live OpenF1 stream. This was intentional 
+the live API requires a commercial tier, real driver 
+biometric data is proprietary team property, and synthetic 
+replay guarantees a reproducible demo with consistent 
+cognitive load spikes.
+
+The architecture is production ready. Switching to live 
+OpenF1 data requires replacing only one file — field names, 
+value ranges, and frequency are identical.
+
+---
+
 ## Why CORTEX?
 
 Other systems ask: *what is the driver's psychological state?*

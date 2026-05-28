@@ -96,7 +96,7 @@ message is intercepted before the cognitive spike, not during it.
 |------|------|--------|
 | **IBM Granite 4** | Urgency classification (1-3) + message summarization to 3 words | `granite_client.py` |
 | **IBM Granite Guardian** | Safety validation — prevents hallucinated instructions reaching the driver | `granite_client.py` |
-| **IBM Docling** | Parses FIA Event Notes PDF → extracts corner load profiles → powers predictive buffer | `docling_processor.py` |
+| **IBM Docling** | Parses FIA Event Notes PDF → extracts corner load profiles → powers predictive buffer | `docling_ingest.py ` |
 
 ### IBM Granite — Urgency Classification
 
@@ -275,6 +275,11 @@ value ranges, and frequency are identical.
 ---
 
 ## Why CORTEX?
+
+CORTEX is designed to operate within existing F1 team 
+infrastructure. The WebSocket interface mirrors the OpenF1 
+API contract exactly, requiring no changes to existing 
+pit wall systems to integrate.
 
 Other systems ask: *what is the driver's psychological state?*
 

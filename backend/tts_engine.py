@@ -1,12 +1,7 @@
-
 import base64, io, numpy as np
 from scipy import signal as scipy_signal
 
 def synthesise(text: str) -> dict:
-    """
-    Generate TTS audio with pit radio bandpass effect.
-    Returns base64 encoded audio string.
-    """
     try:
         from kokoro import KPipeline
         pipeline = KPipeline(lang_code='a')
@@ -20,8 +15,7 @@ def synthesise(text: str) -> dict:
             return {"audio_b64": ""}
 
         full_audio = np.concatenate(audio_chunks)
-
-        # Bandpass filter — simulate pit wall radio (300Hz–3400Hz)
+        # Bandpass filter 
         b, a = scipy_signal.butter(
             3, [300/12000, 3400/12000], btype='bandpass'
         )
